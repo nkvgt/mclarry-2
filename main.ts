@@ -36,6 +36,7 @@ input.onPinTouchEvent(TouchPin.P3, input.buttonEventDown(), function () {
 calliBot2.warte(C2SensorWait.distanceCm, C2Check.lessThan, 7)
 motors.motorPower(100)
 basic.forever(function () {
+    radio.setGroup(130)
     basic.showString("McLarry")
     calliBot2.setRgbLed(C2RgbLed.All, 16, 16, 16)
     calliBot2.setLed(C2Motor.beide, C2State.an)
